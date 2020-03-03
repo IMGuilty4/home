@@ -10,6 +10,7 @@
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/waves.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/likely.css">
 	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
@@ -19,14 +20,16 @@
 	<!--Header-->
 	<header class="item-page">
 		<div class="container">
-			<div class="logo"></div>
+			<a href="index.html" class="logo"></a>
 			<!--Navigation-->
 			<button class="burger"><i class="fas fa-bars"></i></button>
 			<ul class="nav">
-				<li>Home</li>
-				<li>Partners</li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="index.html#partner">Partners</a></li>
 				<li class="has-sub">
-					<span>Catalog <img id="arrow" src="../img/arrow.png" alt="arrow"> </span>
+					<a href="index.html#catalog">
+						<span>Catalog <img id="arrow" src="img/arrow.png" alt="arrow"/></span>
+					</a>
 					<div class="sub-nav">
 					 <ul>
 						 <li>For Rent</li>
@@ -47,12 +50,12 @@
 			</ul>
 
 		<!--/Navigation-->
-      <div class="home-button">Find home of Dream <img src="../img/arr.png" alt="arrow"> </div>
+      <div class="home-button">Find home of Dream <img src="img/arr.png" alt="arrow"/> </div>
      </div>
 	</header>
 
 	<div class="container">
-		<ul class="item-nav">
+		<ul class="item-nav" id="home">
 			<li>Home</li>
 			<i class="fas fa-angle-double-right"></i>
 			<li>For Rent</li>
@@ -62,6 +65,8 @@
 			<li>Villa de la bamberg</li>
 		</ul>
 	</div>
+
+	
 	<section class="item-info">
 		<div class="container">
 			<div class="slider-cont">
@@ -93,7 +98,7 @@
 						<span>1337</span>
 					</div>
 					<hr>
-					<div class="stars"></div>
+					<div class="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>4.0</span></div>
 				</div>
 				<div class="desc">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -103,16 +108,16 @@
 				</div>
 			</div>
 			<ul class="props">
-				<li><img src="../img/item/list/area.svg" alt="area icon" height="25px"><span>350 m2</span></li>
-				<li><img src="../img/item/list/garage.svg" alt="garage icon" height="25px"><span>Garages: 2</span></li>
-				<li><img src="../img/item/list/bathroom.svg" alt="bathroom icon" height="25px"><span>Bathrooms: 3</span></li>
-				<li><img src="../img/item/list/bedroom.svg" alt="bedroom icon" height="25px"><span>Bedrooms: 4</span></li>
-				<li><img src="../img/item/list/cond.svg" alt="conditioner icon" height="25px"><span>Conditioner: 3</span></li>
-				<li><img src="../img/item/list/furniture.svg" alt="furniture icon" height="25px"><span>Furniture: Yes</span></li>
-				<li><img src="../img/item/list/pool.svg" alt="pool icon" height="25px"><span>Swimming Pool: Yes</span></li>
-				<li><img src="../img/item/list/ute.svg" alt="utensil icon" height="25px"><span>Utensil: Yes</span></li>
-				<li><img src="../img/item/list/intercom.svg" alt="intercom icon" height="25px"><span>Intercom: Yes</span></li>
-				<li><img src="../img/item/list/garden.svg" alt="garden icon" height="25px"><span>Garden: Yes</span></li>
+				<li><img src="img/item/list/area.svg" alt="area icon" height="25px"/><span>350 m2</span></li>
+				<li><img src="img/item/list/garage.svg" alt="garage icon" height="25px"/><span>Garages: 2</span></li>
+				<li><img src="img/item/list/bathroom.svg" alt="bathroom icon" height="25px"/><span>Bathrooms: 3</span></li>
+				<li><img src="img/item/list/bedroom.svg" alt="bedroom icon" height="25px"/><span>Bedrooms: 4</span></li>
+				<li><img src="img/item/list/cond.svg" alt="conditioner icon" height="25px"/><span>Conditioner: 3</span></li>
+				<li><img src="img/item/list/furniture.svg" alt="furniture icon" height="25px"/><span>Furniture: Yes</span></li>
+				<li><img src="img/item/list/pool.svg" alt="pool icon" height="25px"/><span>Swimming Pool: Yes</span></li>
+				<li><img src="img/item/list/ute.svg" alt="utensil icon" height="25px"/><span>Utensil: Yes</span></li>
+				<li><img src="img/item/list/intercom.svg" alt="intercom icon" height="25px"/><span>Intercom: Yes</span></li>
+				<li><img src="img/item/list/garden.svg" alt="garden icon" height="25px"/><span>Garden: Yes</span></li>
 			</ul>
 			<div class="contact">
 				<div class="to"><p>To Reserve/Buy:</p></div>
@@ -165,7 +170,7 @@
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</li>
-						<div class="divider"><img src="../img/divider.png" alt="divider image" width="25px" height="5px"></div>
+						<div class="divider"><img src="img/divider.png" alt="divider image" width="25px" height="5px"/></div>
 							<li><div class="person-date-rate">
 								<div class="person">
 									<span>H.Gregory</span>
@@ -179,7 +184,7 @@
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</li>
-						<div class="divider"><img src="../img/divider.png" alt="divider image" width="25px" height="5px"></div>
+						<div class="divider"><img src="img/divider.png" alt="divider image" width="25px" height="5px"/></div>
 						<li>
 							<div class="person-date-rate">
 								<div class="person">
@@ -194,7 +199,7 @@
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</li>
-						<div class="divider"><img src="../img/divider.png" alt="divider image" width="25px" height="5px"></div>
+						<div class="divider"><img src="img/divider.png" alt="divider image" width="25px" height="5px"/></div>
 						<li>
 							<div class="person-date-rate">
 								<div class="person">
@@ -210,7 +215,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</li>
 					</ul>
-					<button class="home-button">Show More <img src="../img/arr.png" alt="arrow"></button>
+					<button class="home-button">Show More <img src="img/arr.png" alt="arrow"/></button>
 				</div>
 				<div class="form-container">
 					<h4>Leave Review:</h4>
@@ -219,25 +224,26 @@
 						<div class="box">
 						  <label for="name"><p>Full Name:</p></label>
 						  <div class="input-box">
-								<input type="textbox" id="name" class="type-1" placeholder="Arthur Black">
+								<input type="textbox" id="name" class="type-1" placeholder="Arthur Black"/>
 								<i class="fas fa-star-of-life"></i>
 						  </div>
 						</div>
 						<div class="box">
 							  <label for="mail"><p>E-mail:</p></label>
 							  <div class="input-box">
-								  <input type="email" id="mail" class="type-1" placeholder="arthur.black@gmail.com">
+								  <input type="email" id="mail" class="type-1" placeholder="arthur.black@gmail.com"/>
 								  <i class="fas fa-star-of-life"></i>
 							  </div>
 						</div>	
-						<div class="box">
+						<div class="box" id="messagebox">
 							<label for="msg"><p>Your Message:</p></label>
 							<div class="msg-box">
 								<textarea class="message" id= "msg" name="msg" rows="10" cols="50" maxlength="200" placeholder="Leave Your Comment Bellow"></textarea>
 								<div class="icon-pos"><i class="fas fa-star-of-life"></i></div>
 							</div>
-						</div>	
-						<button type="submit" id="submit" class="home-button"><p>Send</p><img src="../img/arr.png" alt="arrow"></button>
+						</div>
+						<div class="stars"></div>	
+						<button type="submit" id="submit" class="home-button"><p>Send</p><img src="img/arr.png" alt="arrow"></button>
 					</form>
 				</div>	
 			</div>
@@ -246,7 +252,7 @@
 					<h6>Similar Offers:</h6>
 					<ul>
 						<li>
-							<img src="../img/item/slider/1.png" width="100px" height="65px" alt="property-image">
+							<img src="img/item/slider/1.png" width="100px" height="70px" alt="property-image"/>
 							<div class="info">
 								<p>Chateau le da sagi</p>
 								<div class="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>4.0</span></div>
@@ -254,7 +260,7 @@
 							</div>
 						</li>
 						<li>
-							<img src="../img/item/slider/2.png" width="100px" height="65px" alt="property-image">
+							<img src="img/item/slider/2.png" width="100px" height="70px" alt="property-image"/>
 							<div class="info">
 								<p>Chateau le da sagi</p>
 								<div class="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>4.0</span></div>
@@ -262,7 +268,7 @@
 							</div>
 						</li>
 						<li>
-							<img src="../img/item/slider/3.png" width="100px" height="65px" alt="property-image">
+							<img src="img/item/slider/3.png" width="100px" height="70px" alt="property-image"/>
 							<div class="info">
 								<p>Chateau le da sagi</p>
 								<div class="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>4.0</span></div>
@@ -270,7 +276,7 @@
 							</div>
 						</li>
 						<li>
-							<img src="../img/item/slider/4.png" width="100px" height="65px" alt="property-image">
+							<img src="img/item/slider/4.png" width="100px" height="70px" alt="property-image"/>
 							<div class="info">
 								<p>Chateau le da sagi</p>
 								<div class="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>4.0</span></div>
@@ -278,7 +284,7 @@
 							</div>
 						</li>
 						<li>
-							<img src="../img/item/slider/5.png" width="100px" height="65px" alt="property-image">
+							<img src="img/item/slider/5.png" width="100px" height="70px" alt="property-image"/>
 							<div class="info">
 								<p>Chateau le da sagi</p>
 								<div class="stars2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>4.0</span></div>
@@ -288,8 +294,8 @@
 						<button class="show-more"><p>See More</p></button>
 					</ul>
 				</div>
-				<div class="adv">
-					<img src="../img/item/adv.png" alt="advertisment">
+				<div class="a-block">
+					<img src="img/item/a.png" alt="a"/>
 				</div>
 			</div>				
 		</div>
@@ -303,13 +309,13 @@
 				<h5>Subscribe for our latest news:</h5>
 				<div class="sub-window">
 					<form action="">
-						<input type="email" id="mail2" placeholder="yourmail@mail.com">
+						<input type="email" id="mail2" placeholder="yourmail@mail.com"/>
 						<button type="submit" class="sub-button"><p>Subscribe</p></button>
 					</form>
 				</div>
 			</div>
 			<div class="info-box">
-				<div class="logo"><img src="../img/logo.png" alt="logo" width="150px" height="50px"></div>
+				<div class="logo"><img src="img/logo.png" alt="logo" width="150px" height="50px"/></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<ul class="info">
 					<li><strong>Adress:</strong> 7843 Cherry Street North Fort Myers, FL 33917</li>
@@ -364,8 +370,9 @@
 	 <script type="text/javascript" src="js/jquery.min.js"></script>
 	 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	 <script type="text/javascript" src="js/circle-progress.min.js"></script>
-	 <script type="text/javascript" src="js/stars.js"></script>
+	 <script type="text/javascript" src="js/stars.min.js"></script>
 	 <script type="text/javascript" src="js/likely.js"></script>
+	 <script type="text/javascript" src="js/waves.min.js"></script>
 	 <script src="js/sender.js"></script>
 	 <script src="js/jquery.nice-select.js"></script>
 	 <script src="js/scripts.min.js"></script>

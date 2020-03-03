@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/nice-select.css">
-	<!-- <meta property="og:image" content="img/@1x/preview.jpg"> -->
+	<link rel="stylesheet" href="css/waves.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
@@ -23,14 +23,16 @@
 	<!--Header-->
 	<header>
 		<div class="container">
-			<div class="logo"></div>
+			<a href="index.html" class="logo"></a>
 			<!--Navigation-->
 			<button class="burger"><i class="fas fa-bars"></i></button>
 			<ul class="nav">
-				<li>Home</li>
-				<li>Partners</li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#partner">Partners</a></li>
 				<li class="has-sub">
-					<span>Catalog <img id="arrow" src="img/arrow.png" alt="arrow"> </span>
+					<a href="#catalog">
+						<span>Catalog <img id="arrow" src="img/arrow.png" alt="arrow"/></span>
+					</a>
 					<div class="sub-nav">
 					 <ul>
 						 <li>For Rent</li>
@@ -51,19 +53,19 @@
 			</ul>
 
 				<!--/Navigation-->
-      <div class="home-button">Find home of Dream <img src="img/arr.png" alt="arrow"> </div>
+      <div class="home-button">Find home of Dream <img src="img/arr.png" alt="arrow"/></div>
      </div>
 	</header>
 	<!--/Header-->
 	<!--Slider-->
-	<section class="slider">
+	<section class="slider" id="home">
 	 	<div class="slide" style="background-image: url(img/slider/1.png)">
 	 		<div class="container">
 				<div class="box">
 	 			  <h1><strong>Find Home of Your Dream</strong></h1>
 				  <h2>Not just appartment</h2>
 				 </div>
-				<div class="home-button">Learn More <img src="img/arr.png" alt="arrow"></div>
+				<div class="home-button">Learn More <img src="img/arr.png" alt="arrow"/></div>
 	 		</div>
 	 	</div>
         <div class="slide" style="background-image: url(img/slider/2.png)">
@@ -72,7 +74,7 @@
 	 			  <h1><strong>Find Home of Your Dream</strong></h1>
 				  <h2>Not just appartment</h2>
 				 </div>
-				<div class="home-button">Learn More <img src="img/arr.png" alt="arrow"></div>
+				<div class="home-button">Learn More <img src="img/arr.png" alt="arrow"/></div>
 	 		</div>
 		</div>
 		<div class="slide" style="background-image: url(img/slider/3.png)">
@@ -81,16 +83,16 @@
 	 			  <h1><strong>Find Home of Your Dream</strong></h1>
 				  <h2>Not just appartment</h2>
 				 </div>
-				<div class="home-button">Learn More <img src="img/arr.png" alt="arrow"></div>
+				<div class="home-button">Learn More <img src="img/arr.png" alt="arrow"/></div>
 	 		</div>
 		</div>
 	</section>
 	<!--/Slider-->
 	<!--Catalog-->
-	<section class="catalog">
+	<section class="catalog" id="catalog">
 		<div class="container">
 			<div class="top">
-			  <img src="img/search.png" alt="search-logo" width="50px" height="50px">
+			  <img src="img/search.png" alt="search-logo" width="50px" height="50px"/>
 			  <h3>Find Your Home</h3>
 			</div>
 			<!--Form-->
@@ -98,37 +100,37 @@
 
 				<div class="select-box">
 			      <label for="keywords">Keywords:</label>
-			      <input type="textarea" placeholder="Keywords">
+			      <input type="textarea" placeholder="Keywords"/>
 				</div>
 
 				<div class="select-box">
 					<label for="min-area">Min-Area(m2):</label>
-					<input type="textarea" placeholder="100m2">
+					<input type="textarea" placeholder="100m2"/>
 				</div>
 
 				<div class="select-box">
 					<label for="max-area">Max-Area(m2):</label>
-					<input type="textarea" placeholder="1000m2">
+					<input type="textarea" placeholder="1000m2"/>
 				</div>
 				
 				<div class="select-box">
 					<label for="min-price">Minimal Price:</label>
-					<input type="textarea" placeholder="$200">
+					<input type="textarea" placeholder="$200"/>
 				</div>
 
 				<div class="select-box">
 					<label for="max-price">Maximal Price:</label>
-					<input type="textarea" placeholder="$10000">
+					<input type="textarea" placeholder="$10000"/>
 				</div>
 
 				<div class="select-box">
 					<label for="min-beds">Min.Number of Beds:</label>
-					<input type="textarea" placeholder="2">
+					<input type="textarea" placeholder="2"/>
 				</div>
 
 				<div class="select-box">
 					<label for="max-beds">Max.Number of Beds:</label>
-					<input type="textarea" placeholder="10">
+					<input type="textarea" placeholder="10"/>
 				</div>
 
 				<div class="select-box">
@@ -161,7 +163,7 @@
 
 				<button class="filter"><i class="fas fa-stream"></i><p>More Filters</p></button>
 				
-				<button type="submit" class="home-button"><p>Search</p><img src="img/arr.png" alt="arrow"></button>
+				<button type="submit" class="home-button"><p>Search</p><img src="img/arr.png" alt="arrow"/></button>
 
 			</form>
 			<!--/Form-->
@@ -198,13 +200,13 @@
 							</div>
 						</div>
 						<ul class="prop-info">
-							<li><img src="img/catalog/area.svg" alt="area icon"><span>350 m2</span></li>
-							<li><img src="img/catalog/garages.svg" alt="garage icon"><span>2 Garages</span></li>
-							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"><span>3 Bathrooms</span></li>
-							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"><span>4 Bedrooms</span></li>
+							<li><img src="img/catalog/area.svg" alt="area icon"/><span>350 m2</span></li>
+							<li><img src="img/catalog/garages.svg" alt="garage icon"/><span>2 Garages</span></li>
+							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"/><span>3 Bathrooms</span></li>
+							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"/><span>4 Bedrooms</span></li>
 						</ul>
 						<div class="location">
-							<img src="img/catalog/location.svg" alt="bedroom icon">
+							<img src="img/catalog/location.svg" alt="bedroom icon"/>
 							<span>U.S.A,Washington D.C</span>
 						</div>
 					</div>
@@ -230,13 +232,13 @@
 							</div>
 						</div>
 						<ul class="prop-info">
-							<li><img src="img/catalog/area.svg" alt="area icon"><span>350 m2</span></li>
-							<li><img src="img/catalog/garages.svg" alt="garage icon"><span>2 Garages</span></li>
-							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"><span>3 Bathrooms</span></li>
-							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"><span>4 Bedrooms</span></li>
+							<li><img src="img/catalog/area.svg" alt="area icon"/><span>350 m2</span></li>
+							<li><img src="img/catalog/garages.svg" alt="garage icon"/><span>2 Garages</span></li>
+							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"/><span>3 Bathrooms</span></li>
+							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"/><span>4 Bedrooms</span></li>
 						</ul>
 						<div class="location">
-							<img src="img/catalog/location.svg" alt="bedroom icon">
+							<img src="img/catalog/location.svg" alt="bedroom icon"/>
 							<span>U.S.A,Washington D.C</span>
 						</div>
 					</div>
@@ -262,13 +264,13 @@
 							</div>
 						</div>
 						<ul class="prop-info">
-							<li><img src="img/catalog/area.svg" alt="area icon"><span>350 m2</span></li>
-							<li><img src="img/catalog/garages.svg" alt="garage icon"><span>2 Garages</span></li>
-							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"><span>3 Bathrooms</span></li>
-							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"><span>4 Bedrooms</span></li>
+							<li><img src="img/catalog/area.svg" alt="area icon"/><span>350 m2</span></li>
+							<li><img src="img/catalog/garages.svg" alt="garage icon"/><span>2 Garages</span></li>
+							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"/><span>3 Bathrooms</span></li>
+							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"/><span>4 Bedrooms</span></li>
 						</ul>
 						<div class="location">
-							<img src="img/catalog/location.svg" alt="bedroom icon">
+							<img src="img/catalog/location.svg" alt="bedroom icon"/>
 							<span>U.S.A,Washington D.C</span>
 						</div>
 					</div>
@@ -294,13 +296,13 @@
 							</div>
 						</div>
 						<ul class="prop-info">
-							<li><img src="img/catalog/area.svg" alt="area icon"><span>350 m2</span></li>
-							<li><img src="img/catalog/garages.svg" alt="garage icon"><span>2 Garages</span></li>
-							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"><span>3 Bathrooms</span></li>
-							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"><span>4 Bedrooms</span></li>
+							<li><img src="img/catalog/area.svg" alt="area icon"/><span>350 m2</span></li>
+							<li><img src="img/catalog/garages.svg" alt="garage icon"/><span>2 Garages</span></li>
+							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"/><span>3 Bathrooms</span></li>
+							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"/><span>4 Bedrooms</span></li>
 						</ul>
 						<div class="location">
-							<img src="img/catalog/location.svg" alt="bedroom icon">
+							<img src="img/catalog/location.svg" alt="bedroom icon"/>
 							<span>U.S.A,Washington D.C</span>
 						</div>
 					</div>
@@ -326,13 +328,13 @@
 							</div>
 						</div>
 						<ul class="prop-info">
-							<li><img src="img/catalog/area.svg" alt="area icon"><span>350 m2</span></li>
-							<li><img src="img/catalog/garages.svg" alt="garage icon"><span>2 Garages</span></li>
-							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"><span>3 Bathrooms</span></li>
-							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"><span>4 Bedrooms</span></li>
+							<li><img src="img/catalog/area.svg" alt="area icon"/><span>350 m2</span></li>
+							<li><img src="img/catalog/garages.svg" alt="garage icon"/><span>2 Garages</span></li>
+							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"/><span>3 Bathrooms</span></li>
+							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"/><span>4 Bedrooms</span></li>
 						</ul>
 						<div class="location">
-							<img src="img/catalog/location.svg" alt="bedroom icon">
+							<img src="img/catalog/location.svg" alt="bedroom icon"/>
 							<span>U.S.A,Washington D.C</span>
 						</div>
 					</div>
@@ -358,13 +360,13 @@
 							</div>
 						</div>
 						<ul class="prop-info">
-							<li><img src="img/catalog/area.svg" alt="area icon"><span>350 m2</span></li>
-							<li><img src="img/catalog/garages.svg" alt="garage icon"><span>2 Garages</span></li>
-							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"><span>3 Bathrooms</span></li>
-							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"><span>4 Bedrooms</span></li>
+							<li><img src="img/catalog/area.svg" alt="area icon"/><span>350 m2</span></li>
+							<li><img src="img/catalog/garages.svg" alt="garage icon"/><span>2 Garages</span></li>
+							<li><img src="img/catalog/bathroom.svg" alt="bathroom icon"/><span>3 Bathrooms</span></li>
+							<li><img src="img/catalog/bedroom.svg" alt="bedroom icon"/><span>4 Bedrooms</span></li>
 						</ul>
 						<div class="location">
-							<img src="img/catalog/location.svg" alt="bedroom icon">
+							<img src="img/catalog/location.svg" alt="bedroom icon"/>
 							<span>U.S.A,Washington D.C</span>
 						</div>
 					</div>
@@ -381,13 +383,13 @@
 	</section>
 	<!--/Catalog-->
 
-	<div class="divider"><img src="img/divider.png" alt="divider image" width="65px" height="15px"></div>
+	<div class="divider"><img src="img/divider.png" alt="divider image" width="65px" height="15px"/></div>
 
 	<!--Parnters-->
-	<section class="partners">
+	<section class="partners" id="partner">
 		<div class="container">
 			<div class="top">
-				<img src="img/partner.png" alt="partners-logo" width="50px" height="50px">
+				<img src="img/partner.png" alt="partners-logo" width="50px" height="50px"/>
 				<h3>Partners</h3>
 			</div>
 			<div class="desc">
@@ -407,7 +409,7 @@
 	</section>
 	<!--/Parnters-->
 
-	<div class="divider"><img src="img/divider.png" alt="divider image" width="65px" height="15px"></div>
+	<div class="divider"><img src="img/divider.png" alt="divider image" width="65px" height="15px"/></div>
 
 	<!--Contacts-->
 	<section class="contacts">
@@ -423,28 +425,28 @@
 						<div class="box">
 						  <label for="name"><p>Full Name:</p></label>
 						  <div class="input-box">
-								<input type="textbox" id="name" class="type-1" placeholder="Arthur Black">
+								<input type="textbox" id="name" class="type-1" placeholder="Arthur Black"/>
 								<i class="fas fa-star-of-life"></i>
 						  </div>
 						</div>
 						<div class="box">
 							  <label for="mail"><p>E-mail:</p></label>
 							  <div class="input-box">
-								  <input type="email" id="mail" class="type-1" placeholder="arthur.black@gmail.com">
+								  <input type="email" id="mail" class="type-1" placeholder="arthur.black@gmail.com"/>
 								  <i class="fas fa-star-of-life"></i>
 							  </div>
 						</div>	
 						<div class="box">
 							<label for="phone"><p>Tel.:</p></label>
 							<div class="input-box">
-								<input type="tel" id="phone" name="phone" class="type-1" placeholder="+(123)45 678-90-12">
+								<input type="tel" id="phone" name="phone" class="type-1" placeholder="+(123)45 678-90-12"/>
 								<i class="fas fa-star-of-life"></i>
 							</div>
 						</div>
 						<div class="box">
 							<label for="subject"><p>Subject:</p></label>
 							<div class="input-box">
-								<input type="text" id="subject" class="type-1" placeholder="I need Villa">
+								<input type="text" id="subject" class="type-1" placeholder="I need Villa"/>
 								<i class="fas fa-star-of-life"></i>
 							</div>
 						</div>
@@ -455,7 +457,7 @@
 								<div class="icon-pos"><i class="fas fa-star-of-life"></i></div>
 							</div>
 						</div>	
-						<button type="submit" id="submit" class="home-button"><p>Send</p><img src="img/arr.png" alt="arrow"></button>
+						<button type="submit" id="submit" class="home-button"><p>Send</p><img src="img/arr.png" alt="arrow"/></button>
 					</form>
 				</div>
 				<div class="contacts-n-map">
@@ -493,13 +495,13 @@
 				<h5>Subscribe for our latest news:</h5>
 				<div class="sub-window">
 					<form action="">
-						<input type="email" id="mail2" placeholder="yourmail@mail.com">
+						<input type="email" id="mail2" placeholder="yourmail@mail.com"/>
 						<button type="submit" class="sub-button"><p>Subscribe</p></button>
 					</form>
 				</div>
 			</div>
 			<div class="info-box">
-				<div class="logo"><img src="img/logo.png" alt="logo" width="150px" height="50px"></div>
+				<div class="logo"><img src="img/logo.png" alt="logo" width="150px" height="50px"/></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<ul class="info">
 					<li><strong>Adress:</strong> 7843 Cherry Street North Fort Myers, FL 33917</li>
@@ -561,6 +563,7 @@
 		<script src="js/jquery.nice-select.js"></script>
 		<script type="text/javascript" src="js/circle-progress.min.js"></script>
 		<script type="text/javascript" src="js/stars.min.js"></script>
+		<script type="text/javascript" src="js/waves.min.js"></script>
 		<script type="text/javascript" src="js/likely.js"></script>
 		<script src="js/scripts.min.js"></script>
 
