@@ -93,9 +93,9 @@ $(document).ready(function() {
 
   $(".stars").stars({
     stars: 5,
-    text: [1.0 ,2.0 ,3.0 ,4.0 ,5.0],
+    text: ["1.0" ,"2.0" ,"3.0" ,"4.0" ,"5.0"],
     color: "#3d3d3d",
-    value: "5",
+    value: "5"
   })
 
 
@@ -120,11 +120,10 @@ $(document).ready(function() {
   });
 
 
-/*  $(".nav").aHoverOver({
-   color: "#E04F5F",
- }); */
-
  $('select').niceSelect();
+  
+ Waves.attach('.home-button', ['waves-button', 'waves-float', 'waves-light']);
+ Waves.init()
 
  
 
