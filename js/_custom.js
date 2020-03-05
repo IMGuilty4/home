@@ -125,6 +125,20 @@ $(document).ready(function() {
  Waves.attach('.home-button', ['waves-button', 'waves-float', 'waves-light']);
  Waves.init()
 
+ let cont = $(".nav")
+
+ let hover = new Ahover({
+   container: ".nav",
+   elements: "li",
+   hover: {
+    type: "solid",
+    bgColor: "#E04F5F",
+    extraClass: "lol"
+   }
+ });
+
+
+
  
 
 

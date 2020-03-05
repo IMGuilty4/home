@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/waves.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
 	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 </head>
 
@@ -53,7 +54,7 @@
 			</ul>
 
 				<!--/Navigation-->
-      <div class="home-button">Find home of Dream <img src="img/arr.png" alt="arrow"/></div>
+      <div class="home-button"><span>Find home of Dream</span> <img src="img/arr.png" alt="arrow"/></div>
      </div>
 	</header>
 	<!--/Header-->
@@ -92,45 +93,45 @@
 	<section class="catalog" id="catalog">
 		<div class="container">
 			<div class="top">
-			  <img src="img/search.png" alt="search-logo" width="50px" height="50px"/>
+			  <img src="img/search.png" alt="search-logo" width="50" height="50"/>
 			  <h3>Find Your Home</h3>
 			</div>
 			<!--Form-->
-			<form class="select" action="">
+			<form class="select">
 
 				<div class="select-box">
 			      <label for="keywords">Keywords:</label>
-			      <input type="textarea" placeholder="Keywords"/>
+			      <input type="text" id="keywords" placeholder="Keywords"/>
 				</div>
 
 				<div class="select-box">
 					<label for="min-area">Min-Area(m2):</label>
-					<input type="textarea" placeholder="100m2"/>
+					<input type="text" id="min-area" placeholder="100m2"/>
 				</div>
 
 				<div class="select-box">
 					<label for="max-area">Max-Area(m2):</label>
-					<input type="textarea" placeholder="1000m2"/>
+					<input type="text" id="max-area" placeholder="1000m2"/>
 				</div>
 				
 				<div class="select-box">
 					<label for="min-price">Minimal Price:</label>
-					<input type="textarea" placeholder="$200"/>
+					<input type="text" id="min-price" placeholder="$200"/>
 				</div>
 
 				<div class="select-box">
 					<label for="max-price">Maximal Price:</label>
-					<input type="textarea" placeholder="$10000"/>
+					<input type="text" id="max-price" placeholder="$10000"/>
 				</div>
 
 				<div class="select-box">
 					<label for="min-beds">Min.Number of Beds:</label>
-					<input type="textarea" placeholder="2"/>
+					<input type="text" id="min-beds" placeholder="2"/>
 				</div>
 
 				<div class="select-box">
 					<label for="max-beds">Max.Number of Beds:</label>
-					<input type="textarea" placeholder="10"/>
+					<input type="text" id="max-beds" placeholder="10"/>
 				</div>
 
 				<div class="select-box">
@@ -149,7 +150,7 @@
 					   <option value="Rent">For Rent</option>
 					   <option value="Sale">On Sale</option>
 					</select>
-				</div class="select-box">
+				</div>
 
 				<div class="select-box">
 					<label for="prop-type">Property Type:</label>
@@ -161,9 +162,9 @@
 					</select>
 				</div>
 
-				<button class="filter"><i class="fas fa-stream"></i><p>More Filters</p></button>
+				<button class="filter"><i class="fas fa-stream"></i><span>More Filters</span></button>
 				
-				<button type="submit" class="home-button"><p>Search</p><img src="img/arr.png" alt="arrow"/></button>
+				<button type="submit" class="home-button"><span>Search</span><img src="img/arr.png" alt="arrow"/></button>
 
 			</form>
 			<!--/Form-->
@@ -196,7 +197,7 @@
 							<div class="desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-								<button class="read-more"><a href="itempage.html">Read More</a></button>
+								<a href="itempage.html" class="read-more">Read More</a>
 							</div>
 						</div>
 						<ul class="prop-info">
@@ -228,7 +229,7 @@
 							<div class="desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-								<button class="read-more"><a href="itempage.html">Read More</a></button>
+								<a href="itempage.html" class="read-more">Read More</a>
 							</div>
 						</div>
 						<ul class="prop-info">
@@ -260,7 +261,7 @@
 							<div class="desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-								<button class="read-more"><a href="itempage.html">Read More</a></button>
+								<a href="itempage.html" class="read-more">Read More</a>
 							</div>
 						</div>
 						<ul class="prop-info">
@@ -292,7 +293,7 @@
 							<div class="desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-								<button class="read-more"><a href="itempage.html">Read More</a></button>
+								<a href="itempage.html" class="read-more">Read More</a>
 							</div>
 						</div>
 						<ul class="prop-info">
@@ -324,7 +325,7 @@
 							<div class="desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-								<button class="read-more"><a href="itempage.html">Read More</a></button>
+								<a href="itempage.html" class="read-more">Read More</a>
 							</div>
 						</div>
 						<ul class="prop-info">
@@ -356,7 +357,7 @@
 							<div class="desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-								<button class="read-more"><a href="itempage.html">Read More</a></button>
+								<a href="itempage.html" class="read-more">Read More</a>
 							</div>
 						</div>
 						<ul class="prop-info">
@@ -383,13 +384,13 @@
 	</section>
 	<!--/Catalog-->
 
-	<div class="divider"><img src="img/divider.png" alt="divider image" width="65px" height="15px"/></div>
+	<div class="divider"><img src="img/divider.png" alt="divider image" width="65" height="15"/></div>
 
 	<!--Parnters-->
 	<section class="partners" id="partner">
 		<div class="container">
 			<div class="top">
-				<img src="img/partner.png" alt="partners-logo" width="50px" height="50px"/>
+				<img src="img/partner.png" alt="partners-logo" width="50" height="50"/>
 				<h3>Partners</h3>
 			</div>
 			<div class="desc">
@@ -409,63 +410,63 @@
 	</section>
 	<!--/Parnters-->
 
-	<div class="divider"><img src="img/divider.png" alt="divider image" width="65px" height="15px"/></div>
+	<div class="divider"><img src="img/divider.png" alt="divider image" width="65" height="15"/></div>
 
 	<!--Contacts-->
 	<section class="contacts">
 		<div class="container">
 			<div class="top">
-				<img src="img/contact.png" alt="contact-logo" width="50px" height="50px">
+				<img src="img/contact.png" alt="contact-logo" width="50" height="50">
 				<h3>Contact Us</h3>
 			</div>
 			<div class="in-container">
 				<div class="form-container">
 					<h4>Let us know if you need our help !</h4>
-					<form action="" class="aSender" data-to="contact@a-dream.dev">
+					<form class="aSender" data-to="contact@a-dream.dev">
 						<div class="box">
-						  <label for="name"><p>Full Name:</p></label>
+						  <label for="name">Full Name:</label>
 						  <div class="input-box">
-								<input type="textbox" id="name" class="type-1" placeholder="Arthur Black"/>
+								<input type="text" id="name" class="type-1" placeholder="Arthur Black"/>
 								<i class="fas fa-star-of-life"></i>
 						  </div>
 						</div>
 						<div class="box">
-							  <label for="mail"><p>E-mail:</p></label>
+							  <label for="mail">E-mail:</label>
 							  <div class="input-box">
 								  <input type="email" id="mail" class="type-1" placeholder="arthur.black@gmail.com"/>
 								  <i class="fas fa-star-of-life"></i>
 							  </div>
 						</div>	
 						<div class="box">
-							<label for="phone"><p>Tel.:</p></label>
+							<label for="phone">Tel.:</label>
 							<div class="input-box">
 								<input type="tel" id="phone" name="phone" class="type-1" placeholder="+(123)45 678-90-12"/>
 								<i class="fas fa-star-of-life"></i>
 							</div>
 						</div>
 						<div class="box">
-							<label for="subject"><p>Subject:</p></label>
+							<label for="subject">Subject:</label>
 							<div class="input-box">
 								<input type="text" id="subject" class="type-1" placeholder="I need Villa"/>
 								<i class="fas fa-star-of-life"></i>
 							</div>
 						</div>
 						<div class="box">
-							<label for="msg"><p>Your Message:</p></label>
+							<label for="msg">Your Message:</label>
 							<div class="msg-box">
 								<textarea class="message" id= "msg" name="msg" rows="10" cols="50" maxlength="200" placeholder="Leave Your Comment Bellow"></textarea>
 								<div class="icon-pos"><i class="fas fa-star-of-life"></i></div>
 							</div>
 						</div>	
-						<button type="submit" id="submit" class="home-button"><p>Send</p><img src="img/arr.png" alt="arrow"/></button>
+						<button type="submit" id="submit" class="home-button"><span>Send</span><img src="img/arr.png" alt="arrow"/></button>
 					</form>
 				</div>
 				<div class="contacts-n-map">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					<ul class="info">
 						<li><strong>Adress:</strong> 7843 Cherry Street North Fort Myers, FL 33917</li>
-						<li><strong>E-mail:</strong> contact@mail.com</li>
-						<li><strong>Tel.:</strong> +(123)45 678-90-12</li>
+						<li><strong>E-mail:</strong><a href="mailto:contact@mail.com">contact@mail.com</a></li>
+						<li><strong>Tel.:</strong><a href="tel:045-678-90-12">+(123)45 678-90-12</a></li>
 						<li>
 							<strong>Social:</strong>
 							<ul class="social">
@@ -480,7 +481,12 @@
 						</li>
 					</ul>
 					<div class="map">
-						<div class="mapouter"><div class="gmap_canvas"><iframe width="437" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/namecheap-promo-code/">promo co</a></div><style>.mapouter{position:relative;text-align:right;height:250px;width:437px;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:437px;}</style></div>
+						<div class="mapouter">
+							<div class="gmap_canvas">
+								<iframe width="437" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+								<a href="https://www.embedgooglemap.net/blog/namecheap-promo-code/"></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -494,19 +500,19 @@
 			<div class="subscribe-box">
 				<h5>Subscribe for our latest news:</h5>
 				<div class="sub-window">
-					<form action="">
+					<form>
 						<input type="email" id="mail2" placeholder="yourmail@mail.com"/>
-						<button type="submit" class="sub-button"><p>Subscribe</p></button>
+						<button type="submit" class="sub-button"><span>Subscribe</span></button>
 					</form>
 				</div>
 			</div>
 			<div class="info-box">
-				<div class="logo"><img src="img/logo.png" alt="logo" width="150px" height="50px"/></div>
+				<div class="logo"><img src="img/logo.png" alt="logo" width="150" height="50"/></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<ul class="info">
 					<li><strong>Adress:</strong> 7843 Cherry Street North Fort Myers, FL 33917</li>
-					<li><strong>E-mail:</strong> contact@mail.com</li>
-					<li><strong>Tel.:</strong> +(123)45 678-90-12</li>
+					<li><strong>E-mail:</strong><a href="mailto:contact@mail.com">contact@mail.com</a></li>
+					<li><strong>Tel.:</strong><a href="tel:045-678-90-12">+(123)45 678-90-12</a></li>
 					<li>
 						<strong>Social:</strong>
 						<ul class="social">
@@ -530,7 +536,7 @@
 					<li>Partners</li>
 					<li>Contact Us</li>
 				</ul>
-				<div class="divider"п></div>
+				<div class="divider"></div>
 				<ul>
 					<li>Types:</li>
 					<li>For Rent</li>
@@ -556,15 +562,15 @@
 
 
 	<!--Script List-->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.aHoverOver.js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/AHover.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="js/sender.js"></script>
 		<script src="js/jquery.nice-select.js"></script>
-		<script type="text/javascript" src="js/circle-progress.min.js"></script>
-		<script type="text/javascript" src="js/stars.min.js"></script>
-		<script type="text/javascript" src="js/waves.min.js"></script>
-		<script type="text/javascript" src="js/likely.js"></script>
+		<script src="js/circle-progress.min.js"></script>
+		<script src="js/stars.min.js"></script>
+		<script src="js/waves.min.js"></script>
+		<script src="js/likely.js"></script>
 		<script src="js/scripts.min.js"></script>
 
 </body>
