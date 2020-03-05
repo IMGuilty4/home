@@ -108,9 +108,7 @@ $(document).ready(function() {
   $("#reviews").circleProgress({
     value: 1,
     size: 60,
-    fill: {
-      gradient: [["#ED4337", .1], ["yellow", .3], ["#28A745", .5]]
-    }
+    fill: "#28A745",
   });
 
   $("#rate").circleProgress({
@@ -137,6 +135,17 @@ $(document).ready(function() {
    }
  });
 
+ /* $(".nav").aHoverOver({
+  color : "#E04F5F",
+ }) */
+
+ /* $(window).resize(function(){
+   if ($(window).width()<767) {
+     $(".nav").removeClass("a-hover-over-container")
+     $(".nav li").removeClass("aHoverOver-active", "aHoverOver-now")
+     $(".a-hoverOver").css("display","none")
+   }
+ }) */
 
 
  
