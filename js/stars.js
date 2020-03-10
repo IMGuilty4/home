@@ -23,8 +23,9 @@
         var block = this;
         
         for (var x = 0; x < settings.stars; x++) {
-            var icon = $("<i>").removeClass("far").addClass("fa").addClass(settings.emptyIcon).addClass(settings.starClass);
-            
+            // var icon = $("<i>").removeClass("far").addClass("fa").addClass(settings.emptyIcon).addClass(settings.starClass);
+            var icon = $("<i>").addClass(settings.emptyIcon).addClass(settings.starClass);
+
             if (settings.text) {    
                 icon.attr("data-rating-text", settings.text[x]);
             }

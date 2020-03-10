@@ -81,23 +81,14 @@ $(document).ready(function() {
 
  });
 
-//  $(".slider2").slick({
-//    infinite: true,
-//    slidesToShow: 1,
-//    slidesToScroll: 1,
-//    dots: true,
-//    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-//    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-  
-//   });
 
   $(".stars").stars({
     stars: 5,
-    text: ["1.0" ,"2.0" ,"3.0" ,"4.0" ,"5.0"],
     color: "#3d3d3d",
-    value: "5"
-  })
-
+    value: "5",
+    emptyIcon: 'far fa-star',
+    filledIcon: 'fas fa-star',
+  });
 
   $("#deals").circleProgress({
     value: 1,
@@ -135,61 +126,7 @@ $(document).ready(function() {
    }
  });
 
- /* $(".nav").aHoverOver({
-  color : "#E04F5F",
- }) */
 
- /* $(window).resize(function(){
-   if ($(window).width()<767) {
-     $(".nav").removeClass("a-hover-over-container")
-     $(".nav li").removeClass("aHoverOver-active", "aHoverOver-now")
-     $(".a-hoverOver").css("display","none")
-   }
- }) */
-
-
- 
-
-
- /* function fade(objs, change) {
-  let obj = $(objs);
-  let objH = obj.css("height");
-  let childs = obj.children();
-  obj.css("min-height", objH);
-  childs.fadeOut(250);
-  setTimeout(() => {
-    if(change && obj.hasClass("row")){
-        obj.removeClass("row");
-    }
-    else if (change && !obj.hasClass("row")) {
-      obj.addClass("row");
-    }
-    childs.fadeIn(250);
-  },300);
-
-}
-$(".view-control .row").on("click", function() {
-  if (!$(".catalog-items .items-wrap").hasClass("row")) {
-      fade(".items-wrap", true);
-      $(".view-control button").removeClass("active");
-      $(this).addClass("active");
-      setTimeout(()=>{
-        $(window).trigger("resize");
-      }, 550);
-  }
-});
-
-$(".view-control .column").on("click", function() {
-  if ($(".catalog-items .items-wrap").hasClass("row")) {
-      fade(".items-wrap", true);
-      $(".view-control button").removeClass("active");
-      $(this).addClass("active");
-      setTimeout(()=>{
-        $(window).trigger("resize");
-      }, 550);
-  }
-});
- */
 
 function myNotif(input, status, errMsg = "Error"){
   let myNotif = $(`<div class='my-notif'><span></span><div class='arrow'>▼</div></div>`).css({display: "none" });
@@ -286,13 +223,5 @@ $("#name, #subject, #msg").on('keyup', function(){
       }
     },
   ]
-  });
-
-  
-
- 
-
-
-
-
-});
+ });
+})
